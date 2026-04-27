@@ -1,27 +1,213 @@
-export default function App(){return (<div className='min-h-screen bg-white text-gray-900'><div className='max-w-6xl mx-auto px-6 py-10 space-y-16 font-sans'>
-<section className='rounded-3xl bg-gradient-to-r from-slate-950 via-slate-900 to-emerald-800 text-white p-10 md:p-16 space-y-6 shadow-2xl relative overflow-hidden'><div className='absolute -right-10 -top-10 w-56 h-56 bg-white/10 rounded-full blur-2xl'></div><div className='absolute -left-10 -bottom-10 w-56 h-56 bg-emerald-300/10 rounded-full blur-2xl'></div><p className='uppercase tracking-[0.25em] text-sm text-emerald-200'>Gironde • Immobilier neuf</p><h1 className='text-5xl md:text-7xl font-bold leading-tight'>🏡 Le chasseur du neuf en Gironde</h1><p className='text-xl md:text-2xl text-slate-100 max-w-3xl'>Nous trouvons les meilleures opportunités au prix direct promoteur, sans frais supplémentaires.</p><div className='flex flex-col md:flex-row gap-4'><button className='px-8 py-4 rounded-2xl bg-white text-slate-900 text-lg font-semibold'>🎯 Lancer ma recherche</button><div className='px-8 py-4 rounded-2xl border border-white/30 text-lg'>Service offert • Sans engagement • Réponse rapide</div></div></section>
-<section className='grid md:grid-cols-4 gap-5 text-center -mt-6 relative z-10'>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>💰 Prix direct promoteur garanti</div>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>✅ Aucun frais supplémentaire</div>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>🤝 Un seul chasseur dédié</div>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>🔕 Aucun démarchage multiple</div>
-</section>
-<section className='space-y-6'><div className='text-center space-y-2'><p className='uppercase tracking-[0.25em] text-sm text-emerald-700'>Méthode simple</p><h2 className='text-4xl font-semibold text-center'>Comment fonctionne votre chasseur ?</h2></div>
-<div className='grid md:grid-cols-3 gap-4'>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>1️⃣ Vous donnez vos critères</div>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>2️⃣ Votre chasseur analyse le marché</div>
-<div className='p-5 rounded-2xl shadow-lg bg-white border'>3️⃣ Vous recevez une sélection ciblée</div>
-</div>
-</section>
-<section className='space-y-6 rounded-3xl bg-slate-50 p-8 md:p-10 shadow-xl border'><h2 className='text-4xl font-semibold'>🎯 Donnez des munitions à votre chasseur</h2><p className='text-gray-600'>Plus vous êtes précis, plus la sélection sera pertinente. Un conseiller unique vous sera attribué par email après votre demande.</p>
-<input className='border border-gray-300 p-4 rounded-2xl w-full bg-white' placeholder='Zone recherchée en Gironde'/>
-<input className='border border-gray-300 p-4 rounded-2xl w-full bg-white' placeholder='Budget global'/>
-<input className='border border-gray-300 p-4 rounded-2xl w-full bg-white' placeholder='Apport disponible'/>
-<input className='border border-gray-300 p-4 rounded-2xl w-full bg-white' placeholder='Nom'/>
-<input className='border border-gray-300 p-4 rounded-2xl w-full bg-white' placeholder='Téléphone'/>
-<input className='border border-gray-300 p-4 rounded-2xl w-full bg-white' placeholder='Email'/>
-<button className='px-6 py-4 rounded-2xl bg-emerald-700 hover:bg-emerald-800 text-white text-lg w-full font-semibold shadow-lg'>🏹 Lancer la chasse</button>
-<p className='text-sm text-gray-500'>🔒 Vos coordonnées restent confidentielles. Service offert au prix direct promoteur.</p><div className='grid md:grid-cols-3 gap-4 pt-4'><div className='p-4 rounded-2xl bg-white border'>⭐ Accompagnement humain</div><div className='p-4 rounded-2xl bg-white border'>📍 Gironde & Bordeaux Métropole</div><div className='p-4 rounded-2xl bg-white border'>⚡ Réponse rapide</div></div>
-</section>
-</div></div>)}
+export default function App() {
+  return (
+    <div style={styles.page}>
+      <div style={styles.hero}>
+        <p style={styles.badge}>GIRONDE • IMMOBILIER NEUF</p>
+
+        <h1 style={styles.title}>
+          🏡 Le chasseur du neuf en Gironde
+        </h1>
+
+        <p style={styles.subtitle}>
+          Nous trouvons les meilleures opportunités au prix direct promoteur,
+          sans frais supplémentaires.
+        </p>
+
+        <div style={styles.heroButtons}>
+          <button style={styles.mainBtn}>
+            🎯 Lancer ma recherche
+          </button>
+
+          <div style={styles.infoBox}>
+            Service offert • Sans engagement
+          </div>
+        </div>
+      </div>
+
+      <div style={styles.cards}>
+        <div style={styles.card}>💰 Prix direct promoteur garanti</div>
+        <div style={styles.card}>✅ Aucun frais supplémentaire</div>
+        <div style={styles.card}>🤝 Un seul conseiller dédié</div>
+        <div style={styles.card}>🔕 Aucun démarchage multiple</div>
+      </div>
+
+      <div style={styles.section}>
+        <h2 style={styles.h2}>Comment fonctionne votre chasseur ?</h2>
+
+        <div style={styles.steps}>
+          <div style={styles.step}>1️⃣ Vous donnez vos critères</div>
+          <div style={styles.step}>2️⃣ Nous analysons tout le marché</div>
+          <div style={styles.step}>3️⃣ Vous recevez une sélection ciblée</div>
+        </div>
+      </div>
+
+      <div style={styles.formBlock}>
+        <h2 style={styles.h2}>🎯 Donnez des munitions à votre chasseur</h2>
+
+        <p style={styles.smallText}>
+          Plus vous êtes précis, plus la sélection sera pertinente.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xaqazyvg"
+          method="POST"
+        >
+          <input name="zone" placeholder="Zone recherchée" style={styles.input} />
+          <input name="budget" placeholder="Budget global" style={styles.input} />
+          <input name="apport" placeholder="Apport disponible" style={styles.input} />
+          <input name="nom" placeholder="Nom" style={styles.input} />
+          <input name="telephone" placeholder="Téléphone" style={styles.input} />
+          <input name="email" type="email" placeholder="Email" style={styles.input} />
+
+          <button type="submit" style={styles.submitBtn}>
+            🏹 Lancer la chasse
+          </button>
+        </form>
+
+        <p style={styles.footerText}>
+          🔒 Vos coordonnées restent confidentielles.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+const styles = {
+  page: {
+    fontFamily: "Arial, sans-serif",
+    maxWidth: "1100px",
+    margin: "auto",
+    padding: "30px",
+    background: "#ffffff",
+    color: "#111",
+  },
+
+  hero: {
+    background: "linear-gradient(135deg,#0f172a,#065f46)",
+    color: "white",
+    padding: "60px 40px",
+    borderRadius: "24px",
+    textAlign: "center",
+  },
+
+  badge: {
+    fontSize: "13px",
+    letterSpacing: "2px",
+    opacity: 0.8,
+  },
+
+  title: {
+    fontSize: "56px",
+    marginTop: "10px",
+    marginBottom: "20px",
+  },
+
+  subtitle: {
+    fontSize: "24px",
+    maxWidth: "800px",
+    margin: "auto",
+    lineHeight: "1.5",
+  },
+
+  heroButtons: {
+    marginTop: "30px",
+  },
+
+  mainBtn: {
+    background: "white",
+    color: "#111",
+    padding: "16px 30px",
+    border: "none",
+    borderRadius: "14px",
+    fontSize: "18px",
+    cursor: "pointer",
+    fontWeight: "bold",
+  },
+
+  infoBox: {
+    marginTop: "15px",
+    fontSize: "16px",
+    opacity: 0.9,
+  },
+
+  cards: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "18px",
+    marginTop: "30px",
+  },
+
+  card: {
+    background: "#f8f8f8",
+    padding: "20px",
+    borderRadius: "16px",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+
+  section: {
+    marginTop: "60px",
+    textAlign: "center",
+  },
+
+  h2: {
+    fontSize: "38px",
+    marginBottom: "25px",
+  },
+
+  steps: {
+    display: "grid",
+    gap: "14px",
+  },
+
+  step: {
+    background: "#f8f8f8",
+    padding: "18px",
+    borderRadius: "14px",
+    fontSize: "20px",
+  },
+
+  formBlock: {
+    marginTop: "70px",
+    background: "#f9fafb",
+    padding: "40px",
+    borderRadius: "24px",
+  },
+
+  smallText: {
+    textAlign: "center",
+    color: "#666",
+    marginBottom: "25px",
+  },
+
+  input: {
+    display: "block",
+    width: "100%",
+    padding: "15px",
+    marginBottom: "14px",
+    borderRadius: "12px",
+    border: "1px solid #ccc",
+    fontSize: "16px",
+    boxSizing: "border-box",
+  },
+
+  submitBtn: {
+    width: "100%",
+    background: "#065f46",
+    color: "white",
+    padding: "18px",
+    border: "none",
+    borderRadius: "14px",
+    fontSize: "18px",
+    fontWeight: "bold",
+    cursor: "pointer",
+  },
+
+  footerText: {
+    marginTop: "15px",
+    textAlign: "center",
+    color: "#666",
+    fontSize: "14px",
+  },
+};
 
