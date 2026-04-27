@@ -1,91 +1,32 @@
-export default function App() {
-  return (
-    <div style={{
-      fontFamily:"Arial",
-      maxWidth:"1000px",
-      margin:"auto",
-      padding:"40px",
-      lineHeight:"1.6"
-    }}>
-
-      <h1 style={{fontSize:"48px"}}>
-        🏡 Toute l’offre de logements neufs en Gironde, en un seul endroit
-      </h1>
-
-      <p style={{fontSize:"24px", color:"#555"}}>
-        Recevez gratuitement une sélection personnalisée selon votre budget.
-      </p>
-
-      <button style={{
-        background:"#111",
-        color:"white",
-        padding:"18px 28px",
-        border:"none",
-        borderRadius:"12px",
-        fontSize:"20px",
-        marginTop:"20px"
-      }}>
-        Voir toute l’offre disponible
-      </button>
-
-      <hr style={{margin:"50px 0"}} />
-
-      <h2>Pourquoi passer par nous ?</h2>
-
-      <ul>
-        <li>✅ Prix direct promoteur</li>
-        <li>✅ Aucun frais supplémentaire</li>
-        <li>✅ Un seul conseiller dédié</li>
-        <li>✅ Aucun démarchage multiple</li>
-      </ul>
-
-      <hr style={{margin:"50px 0"}} />
-
-      <h2>Comment ça fonctionne ?</h2>
-
-      <p>1️⃣ Vous remplissez votre demande</p>
-      <p>2️⃣ Un conseiller unique vous contacte</p>
-      <p>3️⃣ Vous recevez une large sélection adaptée</p>
-
-      <hr style={{margin:"50px 0"}} />
-
-      <h2>Recevez votre sélection gratuite</h2>
-
-      <form>
-        <input placeholder="Secteur recherché en Gironde" style={champ} />
-        <input placeholder="Budget global" style={champ} />
-        <input placeholder="Apport disponible" style={champ} />
-        <input placeholder="Nom" style={champ} />
-        <input placeholder="Téléphone" style={champ} />
-        <input placeholder="Email" style={champ} />
-
-        <button style={{
-          background:"green",
-          color:"white",
-          padding:"16px 25px",
-          border:"none",
-          borderRadius:"12px",
-          fontSize:"18px",
-          marginTop:"20px"
-        }}>
-          Recevoir ma sélection gratuite
-        </button>
-      </form>
-
-      <p style={{marginTop:"20px", color:"#666"}}>
-        🔒 Vos coordonnées restent confidentielles.
-      </p>
-
-    </div>
-  );
-}
-
-const champ = {
-  display:"block",
-  width:"100%",
-  padding:"14px",
-  marginTop:"15px",
-  border:"1px solid #ccc",
-  borderRadius:"10px",
-  fontSize:"16px"
-};
+export default function App(){return (<div className='max-w-5xl mx-auto p-8 space-y-10 font-sans'>
+<section className='space-y-4'>
+<h1 className='text-5xl font-bold'>🏡 Le chasseur du neuf en Gironde</h1>
+<p className='text-xl text-gray-600'>Nous trouvons les meilleures opportunités au prix direct promoteur, sans frais supplémentaires.</p>
+<button className='px-6 py-4 rounded-2xl bg-black text-white text-lg'>🎯 Lancer ma recherche</button>
+</section>
+<section className='grid md:grid-cols-4 gap-4 text-center'>
+<div className='p-4 rounded-2xl shadow'>Prix direct promoteur garanti</div>
+<div className='p-4 rounded-2xl shadow'>Aucun frais supplémentaire</div>
+<div className='p-4 rounded-2xl shadow'>Un seul chasseur dédié</div>
+<div className='p-4 rounded-2xl shadow'>Aucun démarchage multiple</div>
+</section>
+<section className='space-y-4'>
+<h2 className='text-3xl font-semibold'>Comment fonctionne votre chasseur ?</h2>
+<div className='grid md:grid-cols-3 gap-4'>
+<div className='p-4 rounded-2xl shadow'>1️⃣ Vous donnez vos critères</div>
+<div className='p-4 rounded-2xl shadow'>2️⃣ Votre chasseur analyse le marché</div>
+<div className='p-4 rounded-2xl shadow'>3️⃣ Vous recevez une sélection ciblée</div>
+</div>
+</section>
+<section className='space-y-4'>
+<h2 className='text-3xl font-semibold'>🎯 Donnez des munitions à votre chasseur</h2>
+<input className='border p-3 rounded-xl w-full' placeholder='Zone recherchée en Gironde'/>
+<input className='border p-3 rounded-xl w-full' placeholder='Budget global'/>
+<input className='border p-3 rounded-xl w-full' placeholder='Apport disponible'/>
+<input className='border p-3 rounded-xl w-full' placeholder='Nom'/>
+<input className='border p-3 rounded-xl w-full' placeholder='Téléphone'/>
+<input className='border p-3 rounded-xl w-full' placeholder='Email'/>
+<button className='px-6 py-4 rounded-2xl bg-green-600 text-white text-lg w-full'>🏹 Lancer la chasse</button>
+<p className='text-sm text-gray-500'>🔒 Vos coordonnées restent confidentielles. Service offert au prix direct promoteur.</p>
+</section>
+</div>)}
