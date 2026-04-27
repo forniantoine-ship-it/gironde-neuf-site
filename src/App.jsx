@@ -1,5 +1,4 @@
 export default function App() {
-
   const goForm = () => {
     document.getElementById("formulaire").scrollIntoView({
       behavior: "smooth"
@@ -8,6 +7,10 @@ export default function App() {
 
   return (
     <div style={styles.page}>
+
+      <div style={styles.topBar}>
+        Aucune diffusion de vos coordonnées • Un seul interlocuteur dédié
+      </div>
 
       <div style={styles.hero}>
         <div style={styles.overlay}></div>
@@ -20,13 +23,16 @@ export default function App() {
           </h1>
 
           <p style={styles.subtitle}>
-            Nous trouvons les meilleures opportunités au prix direct promoteur,
-            sans frais supplémentaires.
+            Accédez à l’ensemble des logements neufs en Gironde au prix direct promoteur, sans frais supplémentaires.
           </p>
 
           <button style={styles.mainBtn} onClick={goForm}>
-            Lancer ma recherche
+            Lancer la chasse
           </button>
+
+          <p style={styles.heroSmall}>
+            Une seule demande. Un seul conseiller dédié. Lui seul vous contactera.
+          </p>
         </div>
       </div>
 
@@ -34,24 +40,24 @@ export default function App() {
 
         <div style={styles.cards}>
           <div style={styles.card}>Prix direct promoteur garanti</div>
-          <div style={styles.card}>Aucun frais supplémentaire</div>
           <div style={styles.card}>Un seul conseiller dédié</div>
           <div style={styles.card}>Aucun démarchage multiple</div>
+          <div style={styles.card}>Accès à tout le marché neuf</div>
         </div>
 
         <div style={styles.section}>
           <h2 style={styles.h2}>Comment fonctionne notre accompagnement ?</h2>
 
           <div style={styles.step}>1. Vous nous indiquez vos critères</div>
-          <div style={styles.step}>2. Nous analysons l'ensemble du marché neuf</div>
+          <div style={styles.step}>2. Nous analysons l’ensemble du marché neuf</div>
           <div style={styles.step}>3. Vous recevez une sélection ciblée</div>
         </div>
 
         <div id="formulaire" style={styles.formBlock}>
-          <h2 style={styles.h2}>Démarrer ma recherche</h2>
+          <h2 style={styles.h2}>Une seule demande suffit</h2>
 
           <p style={styles.smallText}>
-            Remplissez votre demande. Un conseiller dédié vous contactera.
+            Votre conseiller dédié analysera votre projet et vous contactera personnellement.
           </p>
 
           <form action="https://formspree.io/f/xaqazyvg" method="POST">
@@ -70,7 +76,7 @@ export default function App() {
           </form>
 
           <p style={styles.footerText}>
-            Vos coordonnées restent confidentielles.
+            Vos coordonnées ne sont pas diffusées à plusieurs commerciaux.
           </p>
         </div>
 
@@ -80,7 +86,6 @@ export default function App() {
 }
 
 const styles = {
-
   page: {
     margin: 0,
     padding: 0,
@@ -88,10 +93,17 @@ const styles = {
     background: "#f4f1ea"
   },
 
+  topBar: {
+    background: "#111",
+    color: "white",
+    textAlign: "center",
+    padding: "10px",
+    fontSize: "14px"
+  },
+
   hero: {
     position: "relative",
-   backgroundImage:
-"url('/photo.bx.png')",
+    backgroundImage: "url('/photo.bx.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "620px",
@@ -103,7 +115,7 @@ const styles = {
   overlay: {
     position: "absolute",
     inset: 0,
-    background: "rgba(0,0,0,0.22)"
+    background: "rgba(0,0,0,0.32)"
   },
 
   heroContent: {
@@ -111,27 +123,32 @@ const styles = {
     zIndex: 2,
     textAlign: "center",
     color: "white",
-    maxWidth: "900px",
+    maxWidth: "950px",
     padding: "30px"
   },
 
   badge: {
-  letterSpacing: "2px",
-  fontSize: "14px",
-  marginBottom: "20px",
-},
+    letterSpacing: "2px",
+    fontSize: "14px",
+    marginBottom: "20px"
+  },
 
   title: {
-  fontSize: "62px",
-  marginBottom: "20px",
-  lineHeight: "1.1",
-  color: "white"
-},
+    fontSize: "62px",
+    marginBottom: "20px",
+    lineHeight: "1.1",
+    color: "white"
+  },
 
   subtitle: {
     fontSize: "24px",
     lineHeight: "1.5",
-    marginBottom: "35px"
+    marginBottom: "30px"
+  },
+
+  heroSmall: {
+    marginTop: "18px",
+    fontSize: "16px"
   },
 
   mainBtn: {
