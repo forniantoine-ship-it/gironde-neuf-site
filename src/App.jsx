@@ -91,7 +91,7 @@ const styles = {
   hero: {
     position: "relative",
    backgroundImage:
-"url('https://images.unsplash.com/photo-1579017308347-e53e0f67b4d3?auto=format&fit=crop&w=1600&q=80')",
+"url('/bordeaux-premium.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "620px",
