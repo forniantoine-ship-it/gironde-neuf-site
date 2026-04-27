@@ -91,7 +91,8 @@ const styles = {
   hero: {
     position: "relative",
     backgroundImage:
-"url('https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?auto=format&fit=crop&w=1600&q=80')",
+backgroundImage:
+"url('https://images.unsplash.com/photo-1579017308347-e53e0f67b4d3?auto=format&fit=crop&w=1600&q=80')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "620px",
@@ -103,7 +104,7 @@ const styles = {
   overlay: {
     position: "absolute",
     inset: 0,
-    background: "rgba(0,0,0,0.62)"
+    background: "rgba(0,0,0,0.22)"
   },
 
   heroContent: {
@@ -122,10 +123,11 @@ const styles = {
   },
 
   title: {
-    fontSize: "62px",
-    marginBottom: "20px",
-    lineHeight: "1.1"
-  },
+  fontSize: "62px",
+  marginBottom: "20px",
+  lineHeight: "1.1",
+  color: "white"
+},
 
   subtitle: {
     fontSize: "24px",
