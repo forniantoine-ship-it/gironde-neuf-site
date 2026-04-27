@@ -10,7 +10,6 @@ export default function App() {
     <div style={styles.page}>
 
       <div style={styles.hero}>
-
         <div style={styles.overlay}></div>
 
         <div style={styles.heroContent}>
