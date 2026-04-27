@@ -91,7 +91,7 @@ const styles = {
   hero: {
     position: "relative",
    backgroundImage:
-"url('/bordeaux-premium.png')",
+"url('/photo.bx.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "620px",
