@@ -90,8 +90,7 @@ const styles = {
 
   hero: {
     position: "relative",
-    backgroundImage:
-backgroundImage:
+   backgroundImage:
 "url('https://images.unsplash.com/photo-1579017308347-e53e0f67b4d3?auto=format&fit=crop&w=1600&q=80')",
     backgroundSize: "cover",
     backgroundPosition: "center",
