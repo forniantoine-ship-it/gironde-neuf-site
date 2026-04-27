@@ -117,10 +117,10 @@ backgroundImage:
   },
 
   badge: {
-    letterSpacing: "2px",
-    fontSize: "14px",
-    marginBottom: "20px"
-  },
+  letterSpacing: "2px",
+  fontSize: "14px",
+  marginBottom: "20px",
+},
 
   title: {
   fontSize: "62px",
