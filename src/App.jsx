@@ -394,7 +394,8 @@ const styles = {
   logo: {
   fontSize: "24px",
   fontWeight: "bold",
-  color: "white"
+  color: "white",
+
 },
 
   links: { display: "flex", gap: "24px", alignItems: "center" },
