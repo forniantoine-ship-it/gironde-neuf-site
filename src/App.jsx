@@ -125,13 +125,13 @@ function PTZ() {
     <div style={styles.inner}>
       <h1>Le Prêt à Taux Zéro (PTZ)</h1>
 
-      <p>
+      <p style={styles.textBlock}>
         Le Prêt à Taux Zéro est un prêt aidé par l’État, sans intérêts à payer.
         Il vient compléter un crédit immobilier classique et permet de financer
         une partie de votre achat à coût réduit.
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         C’est l’un des meilleurs leviers pour acheter dans le neuf, car il permet
         de baisser le coût total du crédit tout en conservant une mensualité maîtrisée.
       </p>
@@ -139,20 +139,20 @@ function PTZ() {
       <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
-        <li>Aucun intérêt sur la part financée en PTZ</li>
-        <li>Mensualité globale réduite</li>
-        <li>Meilleure capacité d’achat</li>
-        <li>Achat possible plus tôt avec moins d’apport</li>
+        <li style={styles.bulletBlock}>Aucun intérêt sur la part financée en PTZ</li>
+        <li style={styles.bulletBlock}>Mensualité globale réduite</li>
+        <li style={styles.bulletBlock}>Meilleure capacité d’achat</li>
+        <li style={styles.bulletBlock}>Achat possible plus tôt avec moins d’apport</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple chiffré</h2>
 
-      <p>
+      <p style={styles.textBlock}>
         Pour un achat de 250 000 €, un foyer éligible peut obtenir jusqu’à
         100 000 € de PTZ selon sa situation.
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Gain mensuel possible : environ 150 € à 200 €/mois selon dossier.
       </p>
 
@@ -170,12 +170,12 @@ function TVA() {
     <div style={styles.inner}>
       <h1>La TVA Réduite à 5,5 %</h1>
 
-      <p>
+      <p style={styles.textBlock}>
         Dans certaines zones éligibles, l’achat d’un logement neuf peut bénéficier
         d’une TVA réduite à 5,5 % au lieu de 20 %.
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         C’est l’un des dispositifs les plus puissants car le gain est immédiat :
         vous achetez moins cher dès le départ.
       </p>
@@ -183,27 +183,27 @@ function TVA() {
       <h2 style={styles.h2Title}>Pourquoi c'est une opportunité ?</h2>
 
       <ul>
-        <li>Prix d’achat plus bas</li>
-        <li>Crédit moins important</li>
-        <li>Mensualité réduite</li>
-        <li>Accès facilité à la propriété</li>
+        <li style={styles.bulletBlock}>Prix d’achat plus bas</li>
+        <li style={styles.bulletBlock}>Crédit moins important</li>
+        <li style={styles.bulletBlock}>Mensualité réduite</li>
+        <li style={styles.bulletBlock}>Accès facilité à la propriété</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple chiffré</h2>
 
-      <p>
+      <p style={styles.textBlock}>
         Bien neuf classique : 285 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Même bien avec TVA réduite : 250 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Économie immédiate : 35 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Gain mensuel possible : environ 175 €/mois
       </p>
 
@@ -221,39 +221,39 @@ function BRS() {
     <div style={styles.inner}>
       <h1>Le Bail Réel Solidaire (BRS)</h1>
 
-      <p>
+      <p style={styles.textBlock}>
         Le Bail Réel Solidaire permet d’acheter un logement neuf à prix réduit,
         car vous achetez le logement tandis que le terrain reste détenu par un organisme foncier.
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Cela permet de devenir propriétaire avec un budget bien plus accessible.
       </p>
 
       <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
-        <li>Prix d’achat réduit</li>
-        <li>Mensualité plus faible</li>
-        <li>Accès aux secteurs recherchés</li>
-        <li>Très fort levier pour primo-accédants</li>
+        <li style={styles.bulletBlock}>Prix d’achat réduit</li>
+        <li style={styles.bulletBlock}>Mensualité plus faible</li>
+        <li style={styles.bulletBlock}>Accès aux secteurs recherchés</li>
+        <li style={styles.bulletBlock}>Très fort levier pour primo-accédants</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple chiffré</h2>
 
-      <p>
+      <p style={styles.textBlock}>
         Prix classique : 300 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Prix BRS : 220 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Économie à l’achat : 80 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Gain mensuel possible : plus de 300 €/mois
       </p>
 
@@ -273,12 +273,12 @@ function Donation() {
   La Donation Familiale 
 </h1>
 
-      <p>
+      <p style={styles.textBlock}>
         Les parents ou grands-parents peuvent aider un enfant ou petit-enfant
         à acheter sa résidence principale grâce à une donation d’argent.
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         C’est un excellent levier pour constituer un apport personnel et obtenir
         un meilleur financement bancaire.
       </p>
@@ -286,27 +286,27 @@ function Donation() {
       <h2 style={styles.h2Title}>Pourquoi c'est statégique ?</h2>
 
       <ul>
-        <li>Augmente l’apport personnel</li>
-        <li>Permet d’emprunter plus facilement</li>
-        <li>Réduit les mensualités</li>
-        <li>Anticipe la transmission patrimoniale</li>
+        <li style={styles.bulletBlock}>Augmente l’apport personnel</li>
+        <li style={styles.bulletBlock}>Permet d’emprunter plus facilement</li>
+        <li style={styles.bulletBlock}>Réduit les mensualités</li>
+        <li style={styles.bulletBlock}>Anticipe la transmission patrimoniale</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple concret</h2>
 
-      <p>
+      <p style={styles.textBlock}>
         Donation familiale : 100 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Achat neuf : 300 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Crédit bancaire restant : 200 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Dossier renforcé et mensualités fortement réduites.
       </p>
 
@@ -328,7 +328,7 @@ function ActionLogement() {
         Le Prêt Action Logement est réservé aux salariés d’entreprises privées éligibles.
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Il permet de compléter votre financement avec un taux avantageux,
         souvent inférieur au crédit bancaire classique.
       </p>
@@ -336,27 +336,27 @@ function ActionLogement() {
       <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
-        <li>Taux réduit</li>
-        <li>Complément du PTZ possible</li>
-        <li>Mensualité allégée</li>
-        <li>Dossier bancaire renforcé</li>
+        <li style={styles.bulletBlock}>Taux réduit</li>
+        <li style={styles.bulletBlock}>Complément du PTZ possible</li>
+        <li style={styles.bulletBlock}>Mensualité allégée</li>
+        <li style={styles.bulletBlock}>Dossier bancaire renforcé</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple concret</h2>
 
-      <p>
+      <p style={styles.textBlock}>
         Achat neuf : 250 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Prêt Action Logement : 30 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         Crédit bancaire restant : 220 000 €
       </p>
 
-      <p>
+      <p style={styles.textBlock}>
         👉 Gain mensuel possible + coût total du crédit réduit.
       </p>
 
@@ -452,20 +452,19 @@ const styles = {
 
   badge: { letterSpacing: "3px", marginBottom: "20px" },
 
-  title: {
-  fontSize: "58px",
+  h2Title: {
+  fontSize: "34px",
   fontWeight: "700",
-  color: "#ffffff",
+  marginTop: "55px",
+  marginBottom: "28px",
   textAlign: "center",
-  lineHeight: "1.1",
-  marginBottom: "22px",
-  textShadow: "0 4px 18px rgba(0,0,0,0.45)"
+  color: "#111"
 },
 
 textBlock: {
   fontSize: "18px",
-  lineHeight: "1.75",
-  marginBottom: "18px",
+  lineHeight: "1.8",
+  marginBottom: "22px",
   color: "#666",
   textAlign: "center"
 },
@@ -475,7 +474,8 @@ bulletBlock: {
   lineHeight: "1.9",
   marginBottom: "12px",
   color: "#666",
-  textAlign: "center"
+  textAlign: "center",
+  listStylePosition: "inside"
 },
 
   subtitle: {
