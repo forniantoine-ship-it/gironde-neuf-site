@@ -391,7 +391,11 @@ const styles = {
     zIndex: 1000
   },
 
-  logo: { fontSize: "24px", fontWeight: "bold" },
+  logo: {
+  fontSize: "24px",
+  fontWeight: "bold",
+  color: "white"
+},
 
   links: { display: "flex", gap: "24px", alignItems: "center" },
 
