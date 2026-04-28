@@ -159,8 +159,30 @@ function PTZ() {
   return (
     <div style={styles.inner}>
       <h1>Prêt à Taux Zéro (PTZ)</h1>
-      <p>Le PTZ est un prêt sans intérêt destiné aux primo-accédants.</p>
-      <button style={styles.cta}>Vérifier mon éligibilité</button>
+
+      <p>
+        Le Prêt à Taux Zéro est un dispositif gouvernemental destiné aux primo-accédants.
+        Il permet de financer une partie de l’achat de votre résidence principale sans intérêts.
+      </p>
+
+      <h2>Pourquoi c’est puissant ?</h2>
+
+      <ul>
+        <li>Mensualités réduites</li>
+        <li>Coût global du crédit allégé</li>
+        <li>Accession facilitée</li>
+      </ul>
+
+      <h2>Exemple concret</h2>
+
+      <p>
+        Pour un achat de 250 000 €, un foyer éligible peut obtenir jusqu’à
+        48 600 € de PTZ selon sa situation.
+      </p>
+
+      <button style={styles.cta}>
+        Vérifier mon éligibilité PTZ
+      </button>
     </div>
   );
 }
