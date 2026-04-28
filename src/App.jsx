@@ -139,10 +139,10 @@ function PTZ() {
       <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
-        <li style={styles.bulletBlock}>Aucun intérêt sur la part financée en PTZ</li>
-        <li style={styles.bulletBlock}>Mensualité globale réduite</li>
-        <li style={styles.bulletBlock}>Meilleure capacité d’achat</li>
-        <li style={styles.bulletBlock}>Achat possible plus tôt avec moins d’apport</li>
+        <li>Aucun intérêt sur la part financée en PTZ</li>
+        <li>Mensualité globale réduite</li>
+        <li>Meilleure capacité d’achat</li>
+        <li>Achat possible plus tôt avec moins d’apport</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple chiffré</h2>
@@ -183,10 +183,10 @@ function TVA() {
       <h2 style={styles.h2Title}>Pourquoi c'est une opportunité ?</h2>
 
       <ul>
-        <li style={styles.bulletBlock}>Prix d’achat plus bas</li>
-        <li style={styles.bulletBlock}>Crédit moins important</li>
-        <li style={styles.bulletBlock}>Mensualité réduite</li>
-        <li style={styles.bulletBlock}>Accès facilité à la propriété</li>
+        <li>Prix d’achat plus bas</li>
+        <li>Crédit moins important</li>
+        <li>Mensualité réduite</li>
+        <li>Accès facilité à la propriété</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple chiffré</h2>
@@ -233,10 +233,10 @@ function BRS() {
       <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
-        <li style={styles.bulletBlock}>Prix d’achat réduit</li>
-        <li style={styles.bulletBlock}>Mensualité plus faible</li>
-        <li style={styles.bulletBlock}>Accès aux secteurs recherchés</li>
-        <li style={styles.bulletBlock}>Très fort levier pour primo-accédants</li>
+        <li>Prix d’achat réduit</li>
+        <li>Mensualité plus faible</li>
+        <li>Accès aux secteurs recherchés</li>
+        <li>Très fort levier pour primo-accédants</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple chiffré</h2>
@@ -286,10 +286,10 @@ function Donation() {
       <h2 style={styles.h2Title}>Pourquoi c'est statégique ?</h2>
 
       <ul>
-        <li style={styles.bulletBlock}>Augmente l’apport personnel</li>
-        <li style={styles.bulletBlock}>Permet d’emprunter plus facilement</li>
-        <li style={styles.bulletBlock}>Réduit les mensualités</li>
-        <li style={styles.bulletBlock}>Anticipe la transmission patrimoniale</li>
+        <li>Augmente l’apport personnel</li>
+        <li>Permet d’emprunter plus facilement</li>
+        <li>Réduit les mensualités</li>
+        <li>Anticipe la transmission patrimoniale</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple concret</h2>
@@ -336,10 +336,10 @@ function ActionLogement() {
       <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
-        <li style={styles.bulletBlock}>Taux réduit</li>
-        <li style={styles.bulletBlock}>Complément du PTZ possible</li>
-        <li style={styles.bulletBlock}>Mensualité allégée</li>
-        <li style={styles.bulletBlock}>Dossier bancaire renforcé</li>
+        <li>Taux réduit</li>
+        <li>Complément du PTZ possible</li>
+        <li>Mensualité allégée</li>
+        <li>Dossier bancaire renforcé</li>
       </ul>
 
       <h2 style={styles.h2Title}>Exemple concret</h2>
