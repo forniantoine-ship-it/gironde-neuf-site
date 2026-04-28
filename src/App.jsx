@@ -412,9 +412,90 @@ function TVA() {
 function BRS() {
   return (
     <div style={styles.inner}>
-      <h1>Bail Réel Solidaire (BRS)</h1>
-      <p>Achetez un logement neuf à prix réduit grâce au BRS.</p>
-      <button style={styles.cta}>Étudier mon éligibilité</button>
+      <h1>Le Bail Réel Solidaire (BRS)</h1>
+
+      <p>
+        Le Bail Réel Solidaire permet d’acheter un logement neuf à prix réduit,
+        car vous achetez uniquement le logement, tandis que le terrain reste
+        propriété d’un Organisme Foncier Solidaire.
+      </p>
+
+      <p>
+        En contrepartie, l’acquéreur verse une redevance mensuelle modérée
+        pour l’occupation du terrain.
+      </p>
+
+      <p>
+        Ce dispositif permet souvent d’acheter dans des zones où le marché
+        classique serait inaccessible.
+      </p>
+
+      <h2>Pourquoi c’est puissant ?</h2>
+
+      <ul>
+        <li>Prix d’achat fortement réduit</li>
+        <li>Crédit immobilier moins élevé</li>
+        <li>Mensualité globale plus accessible</li>
+        <li>Permet d’acheter dans des secteurs recherchés</li>
+      </ul>
+
+      <h2>Exemple chiffré</h2>
+
+      <p><strong>Pour un appartement neuf identique :</strong></p>
+
+      <p>
+        <strong>Achat classique :</strong><br />
+        Prix : 300 000 €<br />
+        Crédit sur 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 502 €/mois
+      </p>
+
+      <p>
+        <strong>Achat en Bail Réel Solidaire :</strong><br />
+        Prix BRS : 220 000 €<br />
+        Crédit sur 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 101 €/mois
+      </p>
+
+      <p>
+        <strong>Redevance foncière :</strong><br />
+        Estimation : 90 €/mois
+      </p>
+
+      <p>
+        <strong>Mensualité totale en BRS :</strong><br />
+        1 101 € + 90 € = <strong>1 191 €/mois</strong>
+      </p>
+
+      <h2>Résultat concret</h2>
+
+      <p>
+        Achat classique : 1 502 €/mois<br />
+        Achat en BRS : 1 191 €/mois
+      </p>
+
+      <p>
+        <strong>Gain mensuel : environ 311 €/mois</strong><br />
+        <strong>Économie à l’achat : 80 000 €</strong>
+      </p>
+
+      <h2>Ce que cela change</h2>
+
+      <p>
+        Le Bail Réel Solidaire permet souvent de devenir propriétaire d’un logement
+        neuf plus grand ou mieux situé, tout en gardant une mensualité inférieure
+        au marché classique.
+      </p>
+
+      <p>
+        Même avec la redevance, le gain reste très significatif.
+      </p>
+
+      <button style={styles.cta}>
+        Vérifier mon éligibilité BRS
+      </button>
     </div>
   );
 }
