@@ -8,8 +8,8 @@ export default function App() {
     <Router>
       <div style={styles.page}>
         <nav style={styles.nav}>
-        <h2 style={{ color: "red", margin: 0, fontSize: "26px" }}>
-  TEST ROUGE
+        <h2 style={{ color: "#ffffff", margin: 0, fontSize: "18px", fontWeight: "700" }}>
+  Le Chasseur du Neuf
 </h2>
 
           <div style={styles.links}>
@@ -394,10 +394,10 @@ const styles = {
   },
 
   logo: {
-  fontSize: "24px",
-  fontWeight: "bold",
-  color: "white",
-
+  fontSize: "18px",
+  fontWeight: "700",
+  color: "#ffffff",
+  letterSpacing: "0.5px"
 },
 
   links: { display: "flex", gap: "24px", alignItems: "center" },
