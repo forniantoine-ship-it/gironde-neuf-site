@@ -453,10 +453,14 @@ const styles = {
   badge: { letterSpacing: "3px", marginBottom: "20px" },
 
   title: {
-    fontSize: "68px",
-    lineHeight: "1.1",
-    marginBottom: "24px"
-  },
+  fontSize: "78px",
+  fontWeight: "700",
+  color: "#ffffff",
+  textAlign: "center",
+  lineHeight: "1.1",
+  marginBottom: "24px",
+  textShadow: "0 4px 18px rgba(0,0,0,0.45)"
+},
 
   subtitle: {
     fontSize: "28px",
