@@ -332,9 +332,79 @@ function ActionLogement() {
 function TVA() {
   return (
     <div style={styles.inner}>
-      <h1>TVA Réduite</h1>
-      <p>Certaines zones permettent d’acheter en TVA à 5,5 %.</p>
-      <button style={styles.cta}>Voir si j’y ai droit</button>
+      <h1>La TVA Réduite à 5,5 %</h1>
+
+      <p>
+        Dans certaines zones éligibles, l’achat d’un logement neuf en résidence
+        principale peut bénéficier d’une TVA réduite à 5,5 % au lieu de 20 %.
+      </p>
+
+      <p>
+        Cette aide permet de payer le bien moins cher dès l’achat, ce qui réduit
+        automatiquement le montant à financer et donc la mensualité du crédit.
+      </p>
+
+      <p>
+        C’est l’un des dispositifs les plus puissants car le gain est immédiat.
+      </p>
+
+      <h2>Pourquoi c’est une opportunité ?</h2>
+
+      <ul>
+        <li>Prix d’achat plus bas</li>
+        <li>Crédit moins important</li>
+        <li>Mensualité réduite</li>
+        <li>Accès facilité à la propriété</li>
+      </ul>
+
+      <h2>Exemple chiffré</h2>
+
+      <p><strong>Pour un appartement neuf identique :</strong></p>
+
+      <p>
+        <strong>Sans TVA réduite :</strong><br />
+        Prix d’achat : 285 000 €<br />
+        Crédit sur 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 427 €/mois
+      </p>
+
+      <p>
+        <strong>Avec TVA réduite à 5,5 % :</strong><br />
+        Prix d’achat : 250 000 €<br />
+        Crédit sur 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 252 €/mois
+      </p>
+
+      <h2>Résultat concret</h2>
+
+      <p>
+        Sans TVA réduite : 1 427 €/mois<br />
+        Avec TVA réduite : 1 252 €/mois
+      </p>
+
+      <p>
+        <strong> Gain mensuel : environ 175 €/mois</strong><br />
+        <strong> Économie immédiate à l’achat : 35 000 €</strong><br />
+        <strong> Économie totale avec les intérêts évités : encore davantage</strong>
+      </p>
+
+      <h2>Ce que cela change</h2>
+
+      <p>
+        Un logement jugé trop cher en TVA classique peut devenir finançable grâce
+        à la TVA réduite.
+      </p>
+
+      <p>
+         C’est souvent le levier qui permet d’acheter dans un secteur recherché
+        avec une mensualité maîtrisée.
+      </p>
+
+      <button style={styles.cta}>
+        Vérifier mon éligibilité TVA réduite
+      </button>
     </div>
   );
 }
