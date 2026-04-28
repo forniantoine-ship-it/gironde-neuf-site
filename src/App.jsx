@@ -528,7 +528,8 @@ const styles = {
     maxWidth: "900px",
     margin: "auto",
     padding: "80px 25px"
-  }
+ },
+
 floatingBtn: {
   position: "fixed",
   bottom: "18px",
