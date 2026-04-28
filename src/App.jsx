@@ -153,9 +153,12 @@ function PTZ() {
         👉 Gain mensuel possible : environ 150 € à 200 €/mois selon dossier.
       </p>
 
-      <button style={styles.submitBtn}>
-        Vérifier mon éligibilité PTZ
-      </button>
+      <button
+  style={styles.submitBtn}
+  onClick={() => window.location.href='/#formulaire'}
+>
+  Lancer la chasse
+</button>
     </div>
   );
 }
@@ -201,9 +204,12 @@ function TVA() {
         👉 Gain mensuel possible : environ 175 €/mois
       </p>
 
-      <button style={styles.submitBtn}>
-        Vérifier mon éligibilité TVA réduite
-      </button>
+      <button
+  style={styles.submitBtn}
+  onClick={() => window.location.href='/#formulaire'}
+>
+  Lancer la chasse
+</button>
     </div>
   );
 }
@@ -248,9 +254,12 @@ function BRS() {
         👉 Gain mensuel possible : plus de 300 €/mois
       </p>
 
-      <button style={styles.submitBtn}>
-        Vérifier mon éligibilité BRS
-      </button>
+      <button
+  style={styles.submitBtn}
+  onClick={() => window.location.href='/#formulaire'}
+>
+  Lancer la chasse
+</button>
     </div>
   );
 }
@@ -296,9 +305,12 @@ function Donation() {
         👉 Dossier renforcé et mensualités fortement réduites.
       </p>
 
-      <button style={styles.submitBtn}>
-        Étudier mon projet familial
-      </button>
+      <button
+  style={styles.submitBtn}
+  onClick={() => window.location.href='/#formulaire'}
+>
+  Lancer la chasse
+</button>
     </div>
   );
 }
@@ -343,9 +355,12 @@ function ActionLogement() {
         👉 Gain mensuel possible + coût total du crédit réduit.
       </p>
 
-      <button style={styles.submitBtn}>
-        Vérifier mon éligibilité
-      </button>
+      <button
+  style={styles.submitBtn}
+  onClick={() => window.location.href='/#formulaire'}
+>
+  Lancer la chasse
+</button>
     </div>
   );
 }
