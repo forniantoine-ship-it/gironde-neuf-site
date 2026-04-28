@@ -43,7 +43,7 @@ export default function App() {
           <Route path="/contact" element={<Page title="Contact" />} />
 
           <Route path="/aides/ptz" element={<PTZ />} />
-          <Route path="/aides/action-logement" element={<Page title="Action Logement" />} />
+          <Route path="/aides/action-logement" element={<ActionLogement />} />
           <Route path="/aides/tva-reduite" element={<TVA />} />
           <Route path="/aides/brs" element={<BRS />} />
           <Route path="/aides/donation-familiale" element={<Donation />} />
@@ -298,6 +298,53 @@ function Donation() {
 
       <button style={styles.submitBtn}>
         Étudier mon projet familial
+      </button>
+    </div>
+  );
+}
+function ActionLogement() {
+  return (
+    <div style={styles.inner}>
+      <h1>Le Prêt Action Logement</h1>
+
+      <p>
+        Le Prêt Action Logement est réservé aux salariés d’entreprises privées éligibles.
+      </p>
+
+      <p>
+        Il permet de compléter votre financement avec un taux avantageux,
+        souvent inférieur au crédit bancaire classique.
+      </p>
+
+      <h2>Pourquoi c’est intéressant ?</h2>
+
+      <ul>
+        <li>Taux réduit</li>
+        <li>Complément du PTZ possible</li>
+        <li>Mensualité allégée</li>
+        <li>Dossier bancaire renforcé</li>
+      </ul>
+
+      <h2>Exemple concret</h2>
+
+      <p>
+        Achat neuf : 250 000 €
+      </p>
+
+      <p>
+        Prêt Action Logement : 30 000 €
+      </p>
+
+      <p>
+        Crédit bancaire restant : 220 000 €
+      </p>
+
+      <p>
+        👉 Gain mensuel possible + coût total du crédit réduit.
+      </p>
+
+      <button style={styles.submitBtn}>
+        Vérifier mon éligibilité
       </button>
     </div>
   );
