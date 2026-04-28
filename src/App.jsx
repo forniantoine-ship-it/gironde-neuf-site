@@ -42,7 +42,7 @@ export default function App() {
           <Route path="/guides/vefa" element={<Page title="Guide VEFA" />} />
           <Route path="/contact" element={<Page title="Contact" />} />
 
-          <Route path="/aides/ptz" element={<Page title="PTZ" />} />
+          <Route path="/aides/ptz" element={<PTZ />} />
           <Route path="/aides/action-logement" element={<Page title="Action Logement" />} />
           <Route path="/aides/tva-reduite" element={<Page title="TVA Réduite" />} />
           <Route path="/aides/brs" element={<Page title="Bail Réel Solidaire" />} />
@@ -117,7 +117,48 @@ function Home() {
     </>
   );
 }
+function PTZ() {
+  return (
+    <div style={styles.inner}>
+      <h1>Le Prêt à Taux Zéro (PTZ)</h1>
 
+      <p>
+        Le Prêt à Taux Zéro est un prêt aidé par l’État, sans intérêts à payer.
+        Il vient compléter un crédit immobilier classique et permet de financer
+        une partie de votre achat à coût réduit.
+      </p>
+
+      <p>
+        C’est l’un des meilleurs leviers pour acheter dans le neuf, car il permet
+        de baisser le coût total du crédit tout en conservant une mensualité maîtrisée.
+      </p>
+
+      <h2>Pourquoi c’est avantageux ?</h2>
+
+      <ul>
+        <li>Aucun intérêt sur la part financée en PTZ</li>
+        <li>Mensualité globale réduite</li>
+        <li>Meilleure capacité d’achat</li>
+        <li>Achat possible plus tôt avec moins d’apport</li>
+      </ul>
+
+      <h2>Exemple chiffré</h2>
+
+      <p>
+        Pour un achat de 250 000 €, un foyer éligible peut obtenir jusqu’à
+        100 000 € de PTZ selon sa situation.
+      </p>
+
+      <p>
+        👉 Gain mensuel possible : environ 150 € à 200 €/mois selon dossier.
+      </p>
+
+      <button style={styles.submitBtn}>
+        Vérifier mon éligibilité PTZ
+      </button>
+    </div>
+  );
+}
 function Page({ title }) {
   return (
     <div style={styles.inner}>
