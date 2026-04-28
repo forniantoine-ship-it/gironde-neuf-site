@@ -8,13 +8,10 @@ export default function App() {
     <Router>
       <div style={styles.page}>
         <nav style={styles.nav}>
-         <div
-  style={{
-    ...styles.logo,
-    color: "#ffffff"
-  }}
->
-  Le Chasseur du Neuf
+        <div style={styles.logo}>
+  <span style={{ color: "#ffffff" }}>
+    Le Chasseur du Neuf
+  </span>
 </div>
 
           <div style={styles.links}>
