@@ -364,7 +364,7 @@ function ActionLogement() {
   style={styles.submitBtn}
   onClick={() => window.location.href='/#formulaire'}
 >
-  Lancer la chasse
+  Lancer la chasse 
 </button>
     </div>
   );
