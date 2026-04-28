@@ -46,7 +46,7 @@ export default function App() {
           <Route path="/aides/action-logement" element={<Page title="Action Logement" />} />
           <Route path="/aides/tva-reduite" element={<TVA />} />
           <Route path="/aides/brs" element={<BRS />} />
-          <Route path="/aides/donation-familiale" element={<Page title="Donation Familiale" />} />
+          <Route path="/aides/donation-familiale" element={<Donation />} />
         </Routes>
       </div>
     </Router>
@@ -250,6 +250,54 @@ function BRS() {
 
       <button style={styles.submitBtn}>
         Vérifier mon éligibilité BRS
+      </button>
+    </div>
+  );
+}
+function Donation() {
+  return (
+    <div style={styles.inner}>
+      <h1>La Donation Familiale pour acheter dans le neuf</h1>
+
+      <p>
+        Les parents ou grands-parents peuvent aider un enfant ou petit-enfant
+        à acheter sa résidence principale grâce à une donation d’argent.
+      </p>
+
+      <p>
+        C’est un excellent levier pour constituer un apport personnel et obtenir
+        un meilleur financement bancaire.
+      </p>
+
+      <h2>Pourquoi c’est stratégique ?</h2>
+
+      <ul>
+        <li>Augmente l’apport personnel</li>
+        <li>Permet d’emprunter plus facilement</li>
+        <li>Réduit les mensualités</li>
+        <li>Anticipe la transmission patrimoniale</li>
+      </ul>
+
+      <h2>Exemple concret</h2>
+
+      <p>
+        Donation familiale : 100 000 €
+      </p>
+
+      <p>
+        Achat neuf : 300 000 €
+      </p>
+
+      <p>
+        Crédit bancaire restant : 200 000 €
+      </p>
+
+      <p>
+        👉 Dossier renforcé et mensualités fortement réduites.
+      </p>
+
+      <button style={styles.submitBtn}>
+        Étudier mon projet familial
       </button>
     </div>
   );
