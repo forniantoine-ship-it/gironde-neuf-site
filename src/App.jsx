@@ -4,15 +4,26 @@ export default function App() {
   return (
     <Router>
       <div style={styles.page}>
-
-        {/* MENU HAUT */}
+        {/* MENU */}
         <nav style={styles.nav}>
           <div style={styles.logo}>Le Chasseur du Neuf</div>
 
           <div style={styles.links}>
             <Link to="/" style={styles.link}>Accueil</Link>
+
+            <div style={styles.dropdown}>
+              <div style={styles.link}>Dispositifs d’aide ▾</div>
+
+              <div style={styles.dropdownMenu}>
+                <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
+                <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
+                <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
+                <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
+                <Link to="/aides/prix-maitrises" style={styles.dropItem}>Prix Maîtrisés</Link>
+              </div>
+            </div>
+
             <Link to="/guides/vefa" style={styles.link}>Guide VEFA</Link>
-            <Link to="/villes/bordeaux" style={styles.link}>Bordeaux</Link>
             <Link to="/contact" style={styles.link}>Contact</Link>
           </div>
         </nav>
@@ -20,16 +31,21 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/guides/vefa" element={<Vefa />} />
-          <Route path="/villes/bordeaux" element={<Bordeaux />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
 
+          <Route path="/aides/ptz" element={<PTZ />} />
+          <Route path="/aides/action-logement" element={<ActionLogement />} />
+          <Route path="/aides/tva-reduite" element={<TVA />} />
+          <Route path="/aides/brs" element={<BRS />} />
+          <Route path="/aides/prix-maitrises" element={<PrixMaitrises />} />
+        </Routes>
       </div>
     </Router>
   );
 }
 
 /* HOME */
+
 function Home() {
   const goForm = () => {
     document.getElementById("formulaire").scrollIntoView({
@@ -39,8 +55,6 @@ function Home() {
 
   return (
     <div>
-
-      {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.overlay}></div>
 
@@ -65,7 +79,6 @@ function Home() {
         </div>
       </section>
 
-      {/* AVANTAGES */}
       <section style={styles.section}>
         <div style={styles.grid}>
           <div style={styles.card}>Prix direct promoteur garanti</div>
@@ -75,7 +88,6 @@ function Home() {
         </div>
       </section>
 
-      {/* ACCOMPAGNEMENT */}
       <section style={styles.section}>
         <h2 style={styles.h2}>Comment fonctionne notre accompagnement ?</h2>
 
@@ -84,7 +96,6 @@ function Home() {
         <div style={styles.step}>3. Vous recevez une sélection ciblée</div>
       </section>
 
-      {/* FORMULAIRE */}
       <section id="formulaire" style={styles.formWrap}>
         <div style={styles.formBlock}>
           <h2 style={styles.h2}>Une seule demande suffit</h2>
@@ -94,7 +105,6 @@ function Home() {
           </p>
 
           <form action="https://formspree.io/f/xaqazyvg" method="POST">
-
             <input name="zone" placeholder="Zone recherchée" style={styles.input} />
             <input name="budget" placeholder="Budget global" style={styles.input} />
             <input name="apport" placeholder="Apport disponible" style={styles.input} />
@@ -105,7 +115,6 @@ function Home() {
             <button type="submit" style={styles.submitBtn}>
               Recevoir ma sélection
             </button>
-
           </form>
 
           <p style={styles.footerText}>
@@ -113,7 +122,6 @@ function Home() {
           </p>
         </div>
       </section>
-
     </div>
   );
 }
@@ -129,20 +137,61 @@ function Vefa() {
   );
 }
 
-function Bordeaux() {
-  return (
-    <div style={styles.inner}>
-      <h1>Appartement neuf Bordeaux</h1>
-      <p>Découvrez les opportunités dans le neuf à Bordeaux et sa métropole.</p>
-    </div>
-  );
-}
-
 function Contact() {
   return (
     <div style={styles.inner}>
       <h1>Contact</h1>
       <p>Une seule demande. Un seul conseiller dédié.</p>
+    </div>
+  );
+}
+
+function PTZ() {
+  return (
+    <div style={styles.inner}>
+      <h1>Prêt à Taux Zéro (PTZ)</h1>
+      <p>Le PTZ est un prêt sans intérêt destiné aux primo-accédants.</p>
+      <button style={styles.cta}>Vérifier mon éligibilité</button>
+    </div>
+  );
+}
+
+function ActionLogement() {
+  return (
+    <div style={styles.inner}>
+      <h1>Prêt Action Logement</h1>
+      <p>Un prêt réservé aux salariés du privé pour compléter votre financement.</p>
+      <button style={styles.cta}>Étudier mon dossier</button>
+    </div>
+  );
+}
+
+function TVA() {
+  return (
+    <div style={styles.inner}>
+      <h1>TVA Réduite</h1>
+      <p>Certaines zones permettent d’acheter en TVA à 5,5 %.</p>
+      <button style={styles.cta}>Voir si j’y ai droit</button>
+    </div>
+  );
+}
+
+function BRS() {
+  return (
+    <div style={styles.inner}>
+      <h1>Bail Réel Solidaire (BRS)</h1>
+      <p>Achetez un logement neuf à prix réduit grâce au BRS.</p>
+      <button style={styles.cta}>Étudier mon éligibilité</button>
+    </div>
+  );
+}
+
+function PrixMaitrises() {
+  return (
+    <div style={styles.inner}>
+      <h1>Prix Maîtrisés</h1>
+      <p>Des logements neufs à tarifs encadrés selon certaines communes.</p>
+      <button style={styles.cta}>Voir les opportunités</button>
     </div>
   );
 }
@@ -165,7 +214,7 @@ const styles = {
     padding: "18px 40px",
     position: "sticky",
     top: 0,
-    zIndex: 100
+    zIndex: 1000
   },
 
   logo: {
@@ -175,11 +224,35 @@ const styles = {
 
   links: {
     display: "flex",
-    gap: "24px"
+    gap: "24px",
+    alignItems: "center"
   },
 
   link: {
     color: "white",
+    textDecoration: "none",
+    cursor: "pointer"
+  },
+
+  dropdown: {
+    position: "relative"
+  },
+
+  dropdownMenu: {
+    position: "absolute",
+    top: "28px",
+    left: 0,
+    background: "white",
+    minWidth: "220px",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.12)",
+    borderRadius: "10px",
+    padding: "10px"
+  },
+
+  dropItem: {
+    display: "block",
+    padding: "10px",
+    color: "#111",
     textDecoration: "none"
   },
 
@@ -335,5 +408,16 @@ const styles = {
     padding: "80px 25px",
     fontSize: "22px",
     lineHeight: "1.7"
+  },
+
+  cta: {
+    marginTop: "25px",
+    background: "#17a36b",
+    color: "white",
+    border: "none",
+    padding: "16px 28px",
+    borderRadius: "10px",
+    fontSize: "18px",
+    cursor: "pointer"
   }
 };
