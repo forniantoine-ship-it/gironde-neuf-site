@@ -13,7 +13,7 @@ export default function App() {
           <div style={styles.links}>
             <Link to="/" style={styles.link}>Accueil</Link>
 
-            <div style={styles.dropdown}>
+  <div style={styles.dropdown}>
   <div
     style={styles.link}
     onClick={() => setOpenMenu(!openMenu)}
@@ -21,15 +21,16 @@ export default function App() {
     Dispositifs d’aide ▾
   </div>
 
- {openMenu && (
-  <div style={styles.dropdownMenu}>
-    <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
-    <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
-    <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
-    <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
-    <Link to="/aides/donation-familiale" style={styles.dropItem}>Donation Familiale</Link>
-  </div>
-)}
+  {openMenu && (
+    <div style={styles.dropdownMenu}>
+      <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
+      <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
+      <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
+      <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
+      <Link to="/aides/donation-familiale" style={styles.dropItem}>Donation Familiale</Link>
+    </div>
+  )}
+</div>
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,12 +43,12 @@ export default function App() {
           <Route path="/aides/brs" element={<BRS />} />
           <Route path="/aides/donation-familiale" element={<DonationFamiliale />} />
         </Routes>
-      </div>
+       </div>
     </Router>
   );
 }
 
-/* HOME */
+// HOME
 
 function Home() {
   const goForm = () => {
@@ -316,11 +317,12 @@ function ActionLogement() {
         un dossier, réduire le coût du crédit et acheter plus sereinement.
       </p>
 
-      <button style={styles.cta}>
-        Vérifier mon éligibilité Action Logement
-      </button>
-    </div>
-  );
+ <button style={styles.cta}>
+  Vérifier mon éligibilité Action Logement
+</button>
+
+</div>
+);
 }
 
 function TVA() {
