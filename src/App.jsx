@@ -268,7 +268,7 @@ function Donation() {
   return (
     <div style={styles.inner}>
       <h1 style={{ lineHeight: "1.25", textAlign: "center" }}>
-  La Donation Familiale pour acheter dans le neuf
+  La Donation Familiale 
 </h1>
 
       <p>
