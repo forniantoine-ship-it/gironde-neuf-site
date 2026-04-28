@@ -8,11 +8,9 @@ export default function App() {
     <Router>
       <div style={styles.page}>
         <nav style={styles.nav}>
-        <div style={styles.logo}>
-  <span style={{ color: "#ffffff" }}>
-    Le Chasseur du Neuf
-  </span>
-</div>
+        <h2 style={{ color: "red", margin: 0, fontSize: "26px" }}>
+  TEST ROUGE
+</h2>
 
           <div style={styles.links}>
             <Link to="/" style={styles.link}>Accueil</Link>
