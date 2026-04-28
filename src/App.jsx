@@ -452,13 +452,14 @@ const styles = {
 
   badge: { letterSpacing: "3px", marginBottom: "20px" },
 
-  h2Title: {
-  fontSize: "34px",
+  title: {
+  fontSize: "58px",
   fontWeight: "700",
-  marginTop: "55px",
-  marginBottom: "28px",
+  color: "#ffffff",
   textAlign: "center",
-  color: "#111"
+  lineHeight: "1.1",
+  marginBottom: "22px",
+  textShadow: "0 4px 18px rgba(0,0,0,0.45)"
 },
 
 textBlock: {
