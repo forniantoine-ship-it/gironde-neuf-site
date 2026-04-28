@@ -136,7 +136,7 @@ function PTZ() {
         de baisser le coût total du crédit tout en conservant une mensualité maîtrisée.
       </p>
 
-      <h2>Pourquoi c’est avantageux ?</h2>
+      <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
         <li>Aucun intérêt sur la part financée en PTZ</li>
@@ -145,7 +145,7 @@ function PTZ() {
         <li>Achat possible plus tôt avec moins d’apport</li>
       </ul>
 
-      <h2>Exemple chiffré</h2>
+      <h2 style={styles.h2Title}>Exemple chiffré</h2>
 
       <p>
         Pour un achat de 250 000 €, un foyer éligible peut obtenir jusqu’à
@@ -180,7 +180,7 @@ function TVA() {
         vous achetez moins cher dès le départ.
       </p>
 
-      <h2>Pourquoi c’est une opportunité ?</h2>
+      <h2 style={styles.h2Title}>Pourquoi c'est une opportunité ?</h2>
 
       <ul>
         <li>Prix d’achat plus bas</li>
@@ -189,7 +189,7 @@ function TVA() {
         <li>Accès facilité à la propriété</li>
       </ul>
 
-      <h2>Exemple chiffré</h2>
+      <h2 style={styles.h2Title}>Exemple chiffré</h2>
 
       <p>
         Bien neuf classique : 285 000 €
@@ -230,7 +230,7 @@ function BRS() {
         Cela permet de devenir propriétaire avec un budget bien plus accessible.
       </p>
 
-      <h2>Pourquoi c’est puissant ?</h2>
+      <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
         <li>Prix d’achat réduit</li>
@@ -239,7 +239,7 @@ function BRS() {
         <li>Très fort levier pour primo-accédants</li>
       </ul>
 
-      <h2>Exemple chiffré</h2>
+      <h2 style={styles.h2Title}>Exemple chiffré</h2>
 
       <p>
         Prix classique : 300 000 €
@@ -283,7 +283,7 @@ function Donation() {
         un meilleur financement bancaire.
       </p>
 
-      <h2>Pourquoi c’est stratégique ?</h2>
+      <h2 style={styles.h2Title}>Pourquoi c'est statégique ?</h2>
 
       <ul>
         <li>Augmente l’apport personnel</li>
@@ -292,7 +292,7 @@ function Donation() {
         <li>Anticipe la transmission patrimoniale</li>
       </ul>
 
-      <h2>Exemple concret</h2>
+      <h2 style={styles.h2Title}>Exemple concret</h2>
 
       <p>
         Donation familiale : 100 000 €
@@ -333,7 +333,7 @@ function ActionLogement() {
         souvent inférieur au crédit bancaire classique.
       </p>
 
-      <h2>Pourquoi c’est intéressant ?</h2>
+      <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
 
       <ul>
         <li>Taux réduit</li>
@@ -342,7 +342,7 @@ function ActionLogement() {
         <li>Dossier bancaire renforcé</li>
       </ul>
 
-      <h2>Exemple concret</h2>
+      <h2 style={styles.h2Title}>Exemple concret</h2>
 
       <p>
         Achat neuf : 250 000 €
@@ -452,14 +452,29 @@ const styles = {
 
   badge: { letterSpacing: "3px", marginBottom: "20px" },
 
-  title: {
-  fontSize: "58px",
+  h2Title: {
+  fontSize: "34px",
   fontWeight: "700",
-  color: "#ffffff",
+  marginTop: "55px",
+  marginBottom: "28px",
   textAlign: "center",
-  lineHeight: "1.1",
-  marginBottom: "22px",
-  textShadow: "0 4px 18px rgba(0,0,0,0.45)"
+  color: "#111"
+},
+
+textBlock: {
+  fontSize: "18px",
+  lineHeight: "1.75",
+  marginBottom: "18px",
+  color: "#666",
+  textAlign: "center"
+},
+
+bulletBlock: {
+  fontSize: "18px",
+  lineHeight: "1.9",
+  marginBottom: "12px",
+  color: "#666",
+  textAlign: "center"
 },
 
   subtitle: {
