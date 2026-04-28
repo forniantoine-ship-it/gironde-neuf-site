@@ -243,9 +243,88 @@ function PTZ() {
 function ActionLogement() {
   return (
     <div style={styles.inner}>
-      <h1>Prêt Action Logement</h1>
-      <p>Un prêt réservé aux salariés du privé pour compléter votre financement.</p>
-      <button style={styles.cta}>Étudier mon dossier</button>
+      <h1>Le Prêt Action Logement</h1>
+
+      <p>
+        Le Prêt Action Logement est un prêt réservé aux salariés d’entreprises
+        du secteur privé éligibles.
+      </p>
+
+      <p>
+        Il permet de financer une partie de l’achat de votre résidence principale
+        avec un taux très avantageux, souvent bien inférieur à celui d’un crédit immobilier classique.
+      </p>
+
+      <p>
+        C’est une excellente solution pour réduire la mensualité globale et améliorer
+        la faisabilité du projet.
+      </p>
+
+      <h2>Pourquoi c’est intéressant ?</h2>
+
+      <ul>
+        <li>Taux réduit sur une partie du financement</li>
+        <li>Peut compléter le PTZ</li>
+        <li>Diminue le coût total du crédit</li>
+        <li>Permet de conserver plus d’épargne</li>
+      </ul>
+
+      <h2>Exemple chiffré</h2>
+
+      <p><strong>Pour un appartement neuf à 250 000 €</strong></p>
+
+      <p>
+        <strong>Sans Prêt Action Logement :</strong><br />
+        Crédit bancaire : 250 000 €<br />
+        Durée : 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 252 €/mois
+      </p>
+
+      <p>
+        <strong>Avec Prêt Action Logement de 30 000 € + prêt classique de 220 000 € :</strong>
+      </p>
+
+      <p>
+        <strong>Prêt bancaire classique :</strong><br />
+        Montant : 220 000 €<br />
+        Durée : 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 102 €/mois
+      </p>
+
+      <p>
+        <strong>Prêt Action Logement :</strong><br />
+        Montant : 30 000 €<br />
+        Taux préférentiel estimé : 1 %<br />
+        Durée : 25 ans<br />
+        Mensualité : environ 113 €/mois
+      </p>
+
+      <p>
+        <strong>Mensualité totale avec Action Logement :</strong><br />
+        1 102 € + 113 € = <strong>1 215 €/mois</strong>
+      </p>
+
+      <h2>Résultat concret</h2>
+
+      <p>
+        Sans aide : 1 252 €/mois<br />
+        Avec Prêt Action Logement : 1 215 €/mois<br />
+        <strong>Gain mensuel : environ 37 €/mois</strong><br />
+        <strong>Économie totale sur la durée : plusieurs milliers d’euros d’intérêts évités</strong>
+      </p>
+
+      <h2>Ce que cela change</h2>
+
+      <p>
+        Le Prêt Action Logement est souvent un excellent complément pour renforcer
+        un dossier, réduire le coût du crédit et acheter plus sereinement.
+      </p>
+
+      <button style={styles.cta}>
+        Vérifier mon éligibilité Action Logement
+      </button>
     </div>
   );
 }
