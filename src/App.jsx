@@ -21,21 +21,15 @@ export default function App() {
     Dispositifs d’aide ▾
   </div>
 
-  {openMenu && (
-    <div style={styles.dropdownMenu}>
-      <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
-      <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
-      <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
-      <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
-      <Link to="/aides/prix-maitrises" style={styles.dropItem}>Prix Maîtrisés</Link>
-    </div>
-  )}
-</div>
-
-            <Link to="/guides/vefa" style={styles.link}>Guide VEFA</Link>
-            <Link to="/contact" style={styles.link}>Contact</Link>
-          </div>
-        </nav>
+ {openMenu && (
+  <div style={styles.dropdownMenu}>
+    <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
+    <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
+    <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
+    <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
+    <Link to="/aides/donation-familiale" style={styles.dropItem}>Donation Familiale</Link>
+  </div>
+)}
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -46,7 +40,7 @@ export default function App() {
           <Route path="/aides/action-logement" element={<ActionLogement />} />
           <Route path="/aides/tva-reduite" element={<TVA />} />
           <Route path="/aides/brs" element={<BRS />} />
-          <Route path="/aides/prix-maitrises" element={<PrixMaitrises />} />
+          <Route path="/aides/donation-familiale" element={<DonationFamiliale />} />
         </Routes>
       </div>
     </Router>
