@@ -44,7 +44,7 @@ export default function App() {
 
           <Route path="/aides/ptz" element={<PTZ />} />
           <Route path="/aides/action-logement" element={<Page title="Action Logement" />} />
-          <Route path="/aides/tva-reduite" element={<Page title="TVA Réduite" />} />
+          <Route path="/aides/tva-reduite" element={<TVA />} />
           <Route path="/aides/brs" element={<Page title="Bail Réel Solidaire" />} />
           <Route path="/aides/donation-familiale" element={<Page title="Donation Familiale" />} />
         </Routes>
@@ -155,6 +155,54 @@ function PTZ() {
 
       <button style={styles.submitBtn}>
         Vérifier mon éligibilité PTZ
+      </button>
+    </div>
+  );
+}
+function TVA() {
+  return (
+    <div style={styles.inner}>
+      <h1>La TVA Réduite à 5,5 %</h1>
+
+      <p>
+        Dans certaines zones éligibles, l’achat d’un logement neuf peut bénéficier
+        d’une TVA réduite à 5,5 % au lieu de 20 %.
+      </p>
+
+      <p>
+        C’est l’un des dispositifs les plus puissants car le gain est immédiat :
+        vous achetez moins cher dès le départ.
+      </p>
+
+      <h2>Pourquoi c’est une opportunité ?</h2>
+
+      <ul>
+        <li>Prix d’achat plus bas</li>
+        <li>Crédit moins important</li>
+        <li>Mensualité réduite</li>
+        <li>Accès facilité à la propriété</li>
+      </ul>
+
+      <h2>Exemple chiffré</h2>
+
+      <p>
+        Bien neuf classique : 285 000 €
+      </p>
+
+      <p>
+        Même bien avec TVA réduite : 250 000 €
+      </p>
+
+      <p>
+        👉 Économie immédiate : 35 000 €
+      </p>
+
+      <p>
+        👉 Gain mensuel possible : environ 175 €/mois
+      </p>
+
+      <button style={styles.submitBtn}>
+        Vérifier mon éligibilité TVA réduite
       </button>
     </div>
   );
