@@ -45,7 +45,7 @@ export default function App() {
           <Route path="/aides/ptz" element={<PTZ />} />
           <Route path="/aides/action-logement" element={<Page title="Action Logement" />} />
           <Route path="/aides/tva-reduite" element={<TVA />} />
-          <Route path="/aides/brs" element={<Page title="Bail Réel Solidaire" />} />
+          <Route path="/aides/brs" element={<BRS />} />
           <Route path="/aides/donation-familiale" element={<Page title="Donation Familiale" />} />
         </Routes>
       </div>
@@ -203,6 +203,53 @@ function TVA() {
 
       <button style={styles.submitBtn}>
         Vérifier mon éligibilité TVA réduite
+      </button>
+    </div>
+  );
+}
+function BRS() {
+  return (
+    <div style={styles.inner}>
+      <h1>Le Bail Réel Solidaire (BRS)</h1>
+
+      <p>
+        Le Bail Réel Solidaire permet d’acheter un logement neuf à prix réduit,
+        car vous achetez le logement tandis que le terrain reste détenu par un organisme foncier.
+      </p>
+
+      <p>
+        Cela permet de devenir propriétaire avec un budget bien plus accessible.
+      </p>
+
+      <h2>Pourquoi c’est puissant ?</h2>
+
+      <ul>
+        <li>Prix d’achat réduit</li>
+        <li>Mensualité plus faible</li>
+        <li>Accès aux secteurs recherchés</li>
+        <li>Très fort levier pour primo-accédants</li>
+      </ul>
+
+      <h2>Exemple chiffré</h2>
+
+      <p>
+        Prix classique : 300 000 €
+      </p>
+
+      <p>
+        Prix BRS : 220 000 €
+      </p>
+
+      <p>
+        👉 Économie à l’achat : 80 000 €
+      </p>
+
+      <p>
+        👉 Gain mensuel possible : plus de 300 €/mois
+      </p>
+
+      <button style={styles.submitBtn}>
+        Vérifier mon éligibilité BRS
       </button>
     </div>
   );
