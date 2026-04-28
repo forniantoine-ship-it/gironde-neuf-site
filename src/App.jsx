@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export default function App() {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <Router>
       <div style={styles.page}>
@@ -12,16 +14,23 @@ export default function App() {
             <Link to="/" style={styles.link}>Accueil</Link>
 
             <div style={styles.dropdown}>
-              <div style={styles.link}>Dispositifs d’aide ▾</div>
+  <div
+    style={styles.link}
+    onClick={() => setOpenMenu(!openMenu)}
+  >
+    Dispositifs d’aide ▾
+  </div>
 
-              <div style={styles.dropdownMenu}>
-                <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
-                <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
-                <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
-                <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
-                <Link to="/aides/prix-maitrises" style={styles.dropItem}>Prix Maîtrisés</Link>
-              </div>
-            </div>
+  {openMenu && (
+    <div style={styles.dropdownMenu}>
+      <Link to="/aides/ptz" style={styles.dropItem}>PTZ</Link>
+      <Link to="/aides/action-logement" style={styles.dropItem}>Action Logement</Link>
+      <Link to="/aides/tva-reduite" style={styles.dropItem}>TVA Réduite</Link>
+      <Link to="/aides/brs" style={styles.dropItem}>BRS</Link>
+      <Link to="/aides/prix-maitrises" style={styles.dropItem}>Prix Maîtrisés</Link>
+    </div>
+  )}
+</div>
 
             <Link to="/guides/vefa" style={styles.link}>Guide VEFA</Link>
             <Link to="/contact" style={styles.link}>Contact</Link>
