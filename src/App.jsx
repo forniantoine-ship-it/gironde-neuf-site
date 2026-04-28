@@ -114,6 +114,9 @@ function Home() {
           </form>
         </div>
       </section>
+   <a href="/#formulaire" style={styles.floatingBtn}>
+  🎯 Lancer la chasse
+</a>
     </>
   );
 }
@@ -526,4 +529,18 @@ const styles = {
     margin: "auto",
     padding: "80px 25px"
   }
+floatingBtn: {
+  position: "fixed",
+  bottom: "18px",
+  left: "50%",
+  transform: "translateX(-50%)",
+  background: "#17a36b",
+  color: "white",
+  padding: "16px 26px",
+  borderRadius: "999px",
+  textDecoration: "none",
+  fontWeight: "bold",
+  zIndex: 9999,
+  boxShadow: "0 10px 25px rgba(0,0,0,0.2)"
+},
 };
