@@ -158,26 +158,79 @@ function Contact() {
 function PTZ() {
   return (
     <div style={styles.inner}>
-      <h1>Prêt à Taux Zéro (PTZ)</h1>
+      <h1>Le Prêt à Taux Zéro (PTZ)</h1>
 
       <p>
-        Le Prêt à Taux Zéro est un dispositif gouvernemental destiné aux primo-accédants.
-        Il permet de financer une partie de l’achat de votre résidence principale sans intérêts.
+        Le Prêt à Taux Zéro est un prêt aidé par l’État, sans intérêts à payer.
+        Il vient compléter un crédit immobilier classique et permet de financer
+        une partie de votre achat à coût réduit.
       </p>
 
-      <h2>Pourquoi c’est puissant ?</h2>
+      <p>
+        C’est l’un des meilleurs leviers pour acheter dans le neuf, car il permet
+        de baisser le coût total du crédit tout en conservant une mensualité maîtrisée.
+      </p>
+
+      <h2>Pourquoi c’est avantageux ?</h2>
 
       <ul>
-        <li>Mensualités réduites</li>
-        <li>Coût global du crédit allégé</li>
-        <li>Accession facilitée</li>
+        <li>Aucun intérêt sur la part financée en PTZ</li>
+        <li>Mensualité globale réduite</li>
+        <li>Meilleure capacité d’achat</li>
+        <li>Achat possible plus tôt avec moins d’apport</li>
       </ul>
 
-      <h2>Exemple concret</h2>
+      <h2>Exemple chiffré</h2>
+
+      <p><strong>Pour un appartement neuf à 250 000 €</strong></p>
 
       <p>
-        Pour un achat de 250 000 €, un foyer éligible peut obtenir jusqu’à
-        48 600 € de PTZ selon sa situation.
+        <strong>Sans PTZ :</strong><br />
+        Crédit bancaire : 250 000 €<br />
+        Durée : 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 1 252 €/mois
+      </p>
+
+      <p>
+        <strong>Avec PTZ de 100 000 € + prêt classique de 150 000 € :</strong>
+      </p>
+
+      <p>
+        <strong>Prêt bancaire classique :</strong><br />
+        Montant : 150 000 €<br />
+        Durée : 25 ans<br />
+        Taux : 3,5 %<br />
+        Mensualité : environ 751 €/mois
+      </p>
+
+      <p>
+        <strong>PTZ :</strong><br />
+        Montant : 100 000 €<br />
+        Taux : 0 %<br />
+        Remboursement lissé sur 25 ans<br />
+        Mensualité : environ 333 €/mois
+      </p>
+
+      <p>
+        <strong>Mensualité totale avec PTZ :</strong><br />
+        751 € + 333 € = <strong>1 084 €/mois</strong>
+      </p>
+
+      <h2>Résultat concret</h2>
+
+      <p>
+        Sans PTZ : 1 252 €/mois<br />
+        Avec PTZ : 1 084 €/mois<br />
+        <strong>Gain mensuel : environ 168 €/mois</strong><br />
+        <strong>Économie totale sur 25 ans : plus de 50 000 € d’intérêts évités</strong>
+      </p>
+
+      <h2>Ce que cela change</h2>
+
+      <p>
+        Le PTZ permet souvent de passer d’un projet trop juste à un achat réalisable
+        immédiatement, tout en gardant une mensualité confortable.
       </p>
 
       <button style={styles.cta}>
