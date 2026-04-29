@@ -142,15 +142,7 @@ function Home() {
   }}
 />
 
-      <a
-  href="/#formulaire"
-  style={{
-    ...styles.submitBtn,
-    display: "block",
-    textAlign: "center",
-    textDecoration: "none"
-  }}
->
+      <a href="/#formulaire" style={styles.submitBtn}>
   Lancer la chasse
 </a>
     </div>
@@ -178,15 +170,7 @@ function TVA() {
         }}
       />
 
-      <a
-  href="/#formulaire"
-  style={{
-    ...styles.submitBtn,
-    display: "block",
-    textAlign: "center",
-    textDecoration: "none"
-  }}
->
+      <a href="/#formulaire" style={styles.submitBtn}>
   Lancer la chasse
 </a>
     </div>
@@ -214,15 +198,7 @@ function BRS() {
         }}
       />
 
-      <a
-  href="/#formulaire"
-  style={{
-    ...styles.submitBtn,
-    display: "block",
-    textAlign: "center",
-    textDecoration: "none"
-  }}
->
+      <a href="/#formulaire" style={styles.submitBtn}>
   Lancer la chasse
 </a>
     </div>
@@ -250,15 +226,7 @@ function Donation() {
         }}
       />
 
-      <a
-  href="/#formulaire"
-  style={{
-    ...styles.submitBtn,
-    display: "block",
-    textAlign: "center",
-    textDecoration: "none"
-  }}
->
+      <a href="/#formulaire" style={styles.submitBtn}>
   Lancer la chasse
 </a>
     </div>
@@ -286,15 +254,7 @@ function ActionLogement() {
         }}
       />
 
-      <a
-  href="/#formulaire"
-  style={{
-    ...styles.submitBtn,
-    display: "block",
-    textAlign: "center",
-    textDecoration: "none"
-  }}
->
+      <a href="/#formulaire" style={styles.submitBtn}>
   Lancer la chasse
 </a>
     </div>
@@ -322,15 +282,7 @@ function GuideRDV() {
         }}
       />
 
-      <a
-  href="/#formulaire"
-  style={{
-    ...styles.submitBtn,
-    display: "block",
-    textAlign: "center",
-    textDecoration: "none"
-  }}
->
+      <a href="/#formulaire" style={styles.submitBtn}>
   Lancer la chasse
 </a>
     </div>
