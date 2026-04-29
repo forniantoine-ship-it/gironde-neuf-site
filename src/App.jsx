@@ -126,42 +126,21 @@ function PTZ() {
       <h1>Le Prêt à Taux Zéro (PTZ)</h1>
 
       <p style={styles.textBlock}>
-        Le Prêt à Taux Zéro est un prêt aidé par l’État, sans intérêts à payer.
-        Il vient compléter un crédit immobilier classique et permet de financer
-        une partie de votre achat à coût réduit.
+        Découvrez comment financer une partie de votre achat immobilier sans intérêts.
       </p>
 
-      <p style={styles.textBlock}>
-        C’est l’un des meilleurs leviers pour acheter dans le neuf, car il permet
-        de baisser le coût total du crédit tout en conservant une mensualité maîtrisée.
-      </p>
-
-      <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
-
-      <ul>
-        <li>Aucun intérêt sur la part financée en PTZ</li>
-        <li>Mensualité globale réduite</li>
-        <li>Meilleure capacité d’achat</li>
-        <li>Achat possible plus tôt avec moins d’apport</li>
-      </ul>
-
-      <h2 style={styles.h2Title}>Exemple chiffré</h2>
-
-      <p style={styles.textBlock}>
-        Pour un achat de 250 000 €, un foyer éligible peut obtenir jusqu’à
-        100 000 € de PTZ selon sa situation.
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Gain mensuel possible : environ 150 € à 200 €/mois selon dossier.
-      </p>
+      <img
+        src="/ptz.png"
+        alt="Guide PTZ immobilier neuf"
+        style={styles.guideImage}
+      />
 
       <button
-  style={styles.submitBtn}
-  onClick={() => window.location.href='/#formulaire'}
->
-  Lancer la chasse
-</button>
+        style={styles.submitBtn}
+        onClick={() => window.location.href='/#formulaire'}
+      >
+        Lancer la chasse
+      </button>
     </div>
   );
 }
