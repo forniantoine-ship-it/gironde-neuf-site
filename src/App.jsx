@@ -57,8 +57,6 @@ export default function App() {
 
 function Home() {
   const goForm = () => {
-  window.location.href = "/#formulaire";
-};
     document.getElementById("formulaire").scrollIntoView({
       behavior: "smooth"
     });
