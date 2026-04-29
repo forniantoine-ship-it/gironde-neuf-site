@@ -34,7 +34,7 @@ export default function App() {
               )}
             </div>
 
-            <Link to="/guides/Rdv" style={styles.link}>Guide Rdv</Link>
+            <Link to="/guide-rdv" style={styles.link}>Guide RDV</Link>
             <Link to="/contact" style={styles.link}>Contact</Link>
           </div>
         </nav>
