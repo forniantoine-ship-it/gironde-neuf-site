@@ -157,48 +157,28 @@ function TVA() {
       <h1>La TVA Réduite à 5,5 %</h1>
 
       <p style={styles.textBlock}>
-        Dans certaines zones éligibles, l’achat d’un logement neuf peut bénéficier
-        d’une TVA réduite à 5,5 % au lieu de 20 %.
+        Découvrez comment acheter dans le neuf avec une TVA réduite selon votre zone et votre situation.
       </p>
 
-      <p style={styles.textBlock}>
-        C’est l’un des dispositifs les plus puissants car le gain est immédiat :
-        vous achetez moins cher dès le départ.
-      </p>
-
-      <h2 style={styles.h2Title}>Pourquoi c'est une opportunité ?</h2>
-
-      <ul>
-        <li>Prix d’achat plus bas</li>
-        <li>Crédit moins important</li>
-        <li>Mensualité réduite</li>
-        <li>Accès facilité à la propriété</li>
-      </ul>
-
-      <h2 style={styles.h2Title}>Exemple chiffré</h2>
-
-      <p style={styles.textBlock}>
-        Bien neuf classique : 285 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        Même bien avec TVA réduite : 250 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Économie immédiate : 35 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Gain mensuel possible : environ 175 €/mois
-      </p>
+      <img
+        src="/tva-5.5.png"
+        alt="Guide TVA réduite immobilier neuf"
+        style={{
+          width: "100%",
+          maxWidth: "1100px",
+          display: "block",
+          margin: "40px auto",
+          borderRadius: "18px",
+          boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
+        }}
+      />
 
       <button
-  style={styles.submitBtn}
-  onClick={() => window.location.href='/#formulaire'}
->
-  Lancer la chasse
-</button>
+        style={styles.submitBtn}
+        onClick={() => window.location.href = '/#formulaire'}
+      >
+        Lancer la chasse
+      </button>
     </div>
   );
 }
@@ -208,100 +188,59 @@ function BRS() {
       <h1>Le Bail Réel Solidaire (BRS)</h1>
 
       <p style={styles.textBlock}>
-        Le Bail Réel Solidaire permet d’acheter un logement neuf à prix réduit,
-        car vous achetez le logement tandis que le terrain reste détenu par un organisme foncier.
+        Découvrez comment acheter votre résidence principale à prix réduit grâce au Bail Réel Solidaire.
       </p>
 
-      <p style={styles.textBlock}>
-        Cela permet de devenir propriétaire avec un budget bien plus accessible.
-      </p>
-
-      <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
-
-      <ul>
-        <li>Prix d’achat réduit</li>
-        <li>Mensualité plus faible</li>
-        <li>Accès aux secteurs recherchés</li>
-        <li>Très fort levier pour primo-accédants</li>
-      </ul>
-
-      <h2 style={styles.h2Title}>Exemple chiffré</h2>
-
-      <p style={styles.textBlock}>
-        Prix classique : 300 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        Prix BRS : 220 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Économie à l’achat : 80 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Gain mensuel possible : plus de 300 €/mois
-      </p>
+      <img
+        src="/brs.png"
+        alt="Guide Bail Réel Solidaire immobilier neuf"
+        style={{
+          width: "100%",
+          maxWidth: "1100px",
+          display: "block",
+          margin: "40px auto",
+          borderRadius: "18px",
+          boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
+        }}
+      />
 
       <button
-  style={styles.submitBtn}
-  onClick={() => window.location.href='/#formulaire'}
->
-  Lancer la chasse
-</button>
+        style={styles.submitBtn}
+        onClick={() => window.location.href = '/#formulaire'}
+      >
+        Lancer la chasse
+      </button>
     </div>
   );
 }
 function Donation() {
   return (
     <div style={styles.inner}>
-      <h1 style={{ lineHeight: "1.25", textAlign: "center" }}>
-  La Donation Familiale 
-</h1>
+      <h1>La Donation Familiale pour acheter dans le neuf</h1>
 
       <p style={styles.textBlock}>
-        Les parents ou grands-parents peuvent aider un enfant ou petit-enfant
-        à acheter sa résidence principale grâce à une donation d’argent.
+        Découvrez comment un soutien familial peut renforcer votre apport et faciliter votre achat immobilier neuf.
       </p>
 
-      <p style={styles.textBlock}>
-        C’est un excellent levier pour constituer un apport personnel et obtenir
-        un meilleur financement bancaire.
-      </p>
-
-      <h2 style={styles.h2Title}>Pourquoi c'est statégique ?</h2>
-
-      <ul>
-        <li>Augmente l’apport personnel</li>
-        <li>Permet d’emprunter plus facilement</li>
-        <li>Réduit les mensualités</li>
-        <li>Anticipe la transmission patrimoniale</li>
-      </ul>
-
-      <h2 style={styles.h2Title}>Exemple concret</h2>
-
-      <p style={styles.textBlock}>
-        Donation familiale : 100 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        Achat neuf : 300 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        Crédit bancaire restant : 200 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Dossier renforcé et mensualités fortement réduites.
-      </p>
+      <img
+        src="/donation-familiale.png"
+        alt="Guide donation familiale immobilier neuf"
+        style={{
+          width: "100%",
+          maxWidth: "1100px",
+          display: "block",
+          margin: "40px auto",
+          borderRadius: "18px",
+          boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
+        }}
+      />
 
       <button
-  style={styles.submitBtn}
-  onClick={() => window.location.href='/#formulaire'}
->
-  Lancer la chasse
-</button>
+        style={styles.submitBtn}
+        onClick={() => window.location.href = '/#formulaire'}
+      >
+        Lancer la chasse
+      </button>
     </div>
   );
 }
@@ -310,48 +249,29 @@ function ActionLogement() {
     <div style={styles.inner}>
       <h1>Le Prêt Action Logement</h1>
 
-      <p>
-        Le Prêt Action Logement est réservé aux salariés d’entreprises privées éligibles.
-      </p>
-
       <p style={styles.textBlock}>
-        Il permet de compléter votre financement avec un taux avantageux,
-        souvent inférieur au crédit bancaire classique.
+        Découvrez comment compléter votre financement immobilier neuf grâce au Prêt Action Logement à taux avantageux.
       </p>
 
-      <h2 style={styles.h2Title}>Pourquoi c'est avantageux ?</h2>
-
-      <ul>
-        <li>Taux réduit</li>
-        <li>Complément du PTZ possible</li>
-        <li>Mensualité allégée</li>
-        <li>Dossier bancaire renforcé</li>
-      </ul>
-
-      <h2 style={styles.h2Title}>Exemple concret</h2>
-
-      <p style={styles.textBlock}>
-        Achat neuf : 250 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        Prêt Action Logement : 30 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        Crédit bancaire restant : 220 000 €
-      </p>
-
-      <p style={styles.textBlock}>
-        👉 Gain mensuel possible + coût total du crédit réduit.
-      </p>
+      <img
+        src="/pret-action-logement.png"
+        alt="Guide Prêt Action Logement immobilier neuf"
+        style={{
+          width: "100%",
+          maxWidth: "1100px",
+          display: "block",
+          margin: "40px auto",
+          borderRadius: "18px",
+          boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
+        }}
+      />
 
       <button
-  style={styles.submitBtn}
-  onClick={() => window.location.href='/#formulaire'}
->
-  Lancer la chasse 
-</button>
+        style={styles.submitBtn}
+        onClick={() => window.location.href = '/#formulaire'}
+      >
+        Lancer la chasse
+      </button>
     </div>
   );
 }
