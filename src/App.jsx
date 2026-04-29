@@ -57,6 +57,8 @@ export default function App() {
 
 function Home() {
   const goForm = () => {
+  window.location.href = "/#formulaire";
+};
     document.getElementById("formulaire").scrollIntoView({
       behavior: "smooth"
     });
@@ -104,7 +106,7 @@ function Home() {
             Votre conseiller dédié analysera votre projet et vous contactera personnellement.
           </p>
 
-          <form action="https://formspree.io/f/xaqazyvg" method="POST">
+          <form id="formulaire" action="https://formspree.io/f/xaqazyvg" method="POST">
             <input name="nom" placeholder="Nom" style={styles.input} />
             <input name="telephone" placeholder="Téléphone" style={styles.input} />
             <input name="email" placeholder="Email" style={styles.input} />
@@ -119,7 +121,7 @@ function Home() {
    
     </>
   );
-}
+
 function PTZ() {
   return (
     <div style={styles.inner}>
@@ -287,12 +289,19 @@ function GuideRDV() {
       <img
         src="/guide-rdv.png"
         alt="Guide rendez-vous immobilier neuf"
-        style={styles.guideImage}
+        style={{
+          width: "100%",
+          maxWidth: "1100px",
+          display: "block",
+          margin: "40px auto",
+          borderRadius: "18px",
+          boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
+        }}
       />
 
       <button
         style={styles.submitBtn}
-        onClick={() => window.location.href='/#formulaire'}
+        onClick={() => window.location.href='/'}
       >
         Lancer la chasse
       </button>
