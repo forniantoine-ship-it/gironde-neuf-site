@@ -145,7 +145,7 @@ function Home() {
       <button
   style={styles.submitBtn}
   onClick={() => {
-    window.location.href = "/#formulaire";
+    window.location.assign("/#formulaire");
   }}
 >
   Lancer la chasse
