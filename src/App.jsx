@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export default function App() {
@@ -61,7 +61,7 @@ function Home() {
       behavior: "smooth",
     });
   };
-React.useEffect(() => {
+useEffect(() => {
   if (window.location.hash === "#formulaire") {
     setTimeout(() => {
       document.getElementById("formulaire")?.scrollIntoView({
