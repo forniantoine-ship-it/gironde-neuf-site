@@ -34,14 +34,14 @@ export default function App() {
               )}
             </div>
 
-            <Link to="/guides/vefa" style={styles.link}>Guide VEFA</Link>
+            <Link to="/guides/Rdv" style={styles.link}>Guide Rdv</Link>
             <Link to="/contact" style={styles.link}>Contact</Link>
           </div>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/guides/vefa" element={<Page title="Guide VEFA" />} />
+          <Route path="/guide-rdv" element={<GuideRDV />} />
           <Route path="/contact" element={<Page title="Contact" />} />
 
           <Route path="/aides/ptz" element={<PTZ />} />
@@ -366,6 +366,29 @@ function ActionLogement() {
 >
   Lancer la chasse 
 </button>
+    </div>
+  );
+}
+function GuideRDV() {
+  return (
+    <div style={styles.inner}>
+      <h1>Guide RDV</h1>
+
+      <p style={styles.textBlock}>
+        Découvrez comment votre conseiller vous accompagne de la demande jusqu’à la sélection finale.
+      </p>
+
+      <img
+        src="/guide-rdv.png"
+        alt="Guide rendez-vous immobilier neuf"
+        style={{
+          width: "100%",
+          maxWidth: "900px",
+          borderRadius: "18px",
+          marginTop: "30px",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.12)"
+        }}
+      />
     </div>
   );
 }
