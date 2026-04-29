@@ -35,7 +35,7 @@ export default function App() {
             </div>
 
             <Link to="/guide-rdv" style={styles.link}>Guide RDV</Link>
-            <Link to="/contact" style={styles.link}>Contact</Link>
+            <a href="/#formulaire" style={styles.link}>Contact</a>
           </div>
         </nav>
 
@@ -287,14 +287,15 @@ function GuideRDV() {
       <img
         src="/guide-rdv.png"
         alt="Guide rendez-vous immobilier neuf"
-        style={{
-          width: "100%",
-          maxWidth: "900px",
-          borderRadius: "18px",
-          marginTop: "30px",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.12)"
-        }}
+        style={styles.guideImage}
       />
+
+      <button
+        style={styles.submitBtn}
+        onClick={() => window.location.href='/#formulaire'}
+      >
+        Lancer la chasse
+      </button>
     </div>
   );
 }
