@@ -58,7 +58,7 @@ export default function App() {
 function Home() {
   const goForm = () => {
     document.getElementById("formulaire").scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -118,9 +118,9 @@ function Home() {
       </section>
    
     </>
-  );
-
-function PTZ() {
+    );
+ }
+ function PTZ() {
   return (
     <div style={styles.inner}>
       <h1>Le Prêt à Taux Zéro (PTZ)</h1>
@@ -492,7 +492,7 @@ bulletBlock: {
     width: "100%",
     background: "#17a36b",
     color: "white",
-    border: "none",
+    border: "1px solid #ccc",
     padding: "18px",
     borderRadius: "10px",
     fontSize: "18px"
@@ -502,7 +502,7 @@ bulletBlock: {
     maxWidth: "900px",
     margin: "auto",
     padding: "80px 25px"
- },
+ }
 
 
 };
