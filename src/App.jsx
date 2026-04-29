@@ -143,12 +143,13 @@ function Home() {
 />
 
       <button
-       onClick={() => {
-  window.location.href='/?scroll=formulaire';
-}}
-      >
-        Lancer la chasse
-      </button>
+  style={styles.submitBtn}
+  onClick={() => {
+    window.location.href = "/#formulaire";
+  }}
+>
+  Lancer la chasse
+</button>
     </div>
   );
 }
