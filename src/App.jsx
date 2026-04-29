@@ -142,14 +142,17 @@ function Home() {
   }}
 />
 
-      <button
-  style={styles.submitBtn}
-  onClick={() => {
-    window.location.assign("/#formulaire");
+      <a
+  href="/#formulaire"
+  style={{
+    ...styles.submitBtn,
+    display: "block",
+    textAlign: "center",
+    textDecoration: "none"
   }}
 >
   Lancer la chasse
-</button>
+</a>
     </div>
   );
 }
@@ -175,12 +178,17 @@ function TVA() {
         }}
       />
 
-      <button
-        style={styles.submitBtn}
-        onClick={() => window.location.href = '/#formulaire'}
-      >
-        Lancer la chasse
-      </button>
+      <a
+  href="/#formulaire"
+  style={{
+    ...styles.submitBtn,
+    display: "block",
+    textAlign: "center",
+    textDecoration: "none"
+  }}
+>
+  Lancer la chasse
+</a>
     </div>
   );
 }
@@ -206,12 +214,17 @@ function BRS() {
         }}
       />
 
-      <button
-        style={styles.submitBtn}
-        onClick={() => window.location.href = '/#formulaire'}
-      >
-        Lancer la chasse
-      </button>
+      <a
+  href="/#formulaire"
+  style={{
+    ...styles.submitBtn,
+    display: "block",
+    textAlign: "center",
+    textDecoration: "none"
+  }}
+>
+  Lancer la chasse
+</a>
     </div>
   );
 }
@@ -237,12 +250,17 @@ function Donation() {
         }}
       />
 
-      <button
-        style={styles.submitBtn}
-        onClick={() => window.location.href = '/#formulaire'}
-      >
-        Lancer la chasse
-      </button>
+      <a
+  href="/#formulaire"
+  style={{
+    ...styles.submitBtn,
+    display: "block",
+    textAlign: "center",
+    textDecoration: "none"
+  }}
+>
+  Lancer la chasse
+</a>
     </div>
   );
 }
@@ -268,12 +286,17 @@ function ActionLogement() {
         }}
       />
 
-      <button
-        style={styles.submitBtn}
-        onClick={() => window.location.href = '/#formulaire'}
-      >
-        Lancer la chasse
-      </button>
+      <a
+  href="/#formulaire"
+  style={{
+    ...styles.submitBtn,
+    display: "block",
+    textAlign: "center",
+    textDecoration: "none"
+  }}
+>
+  Lancer la chasse
+</a>
     </div>
   );
 }
@@ -299,12 +322,17 @@ function GuideRDV() {
         }}
       />
 
-      <button
-        style={styles.submitBtn}
-        onClick={() => window.location.href='/'}
-      >
-        Lancer la chasse
-      </button>
+      <a
+  href="/#formulaire"
+  style={{
+    ...styles.submitBtn,
+    display: "block",
+    textAlign: "center",
+    textDecoration: "none"
+  }}
+>
+  Lancer la chasse
+</a>
     </div>
   );
 }
