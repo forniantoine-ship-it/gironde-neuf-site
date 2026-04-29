@@ -130,10 +130,17 @@ function PTZ() {
       </p>
 
       <img
-        src="/ptz.png"
-        alt="Guide PTZ immobilier neuf"
-        style={styles.guideImage}
-      />
+  src="/ptz.png"
+  alt="Guide PTZ immobilier neuf"
+  style={{
+    width: "100%",
+    maxWidth: "1100px",
+    display: "block",
+    margin: "40px auto",
+    borderRadius: "18px",
+    boxShadow: "0 12px 28px rgba(0,0,0,0.12)"
+  }}
+/>
 
       <button
         style={styles.submitBtn}
