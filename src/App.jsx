@@ -143,8 +143,9 @@ function Home() {
 />
 
       <button
-        style={styles.submitBtn}
-        onClick={() => window.location.href='/#formulaire'}
+       onClick={() => {
+  window.location.href='/?scroll=formulaire';
+}}
       >
         Lancer la chasse
       </button>
@@ -216,7 +217,7 @@ function BRS() {
 function Donation() {
   return (
     <div style={styles.inner}>
-      <h1>La Donation Familiale pour acheter dans le neuf</h1>
+      <h1>La Donation Familiale</h1>
 
       <p style={styles.textBlock}>
         Découvrez comment un soutien familial peut renforcer votre apport et faciliter votre achat immobilier neuf.
