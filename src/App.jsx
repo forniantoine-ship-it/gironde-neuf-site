@@ -61,7 +61,15 @@ function Home() {
       behavior: "smooth",
     });
   };
-
+React.useEffect(() => {
+  if (window.location.hash === "#formulaire") {
+    setTimeout(() => {
+      document.getElementById("formulaire")?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }, 300);
+  }
+}, []);
   return (
     <>
       <section style={styles.hero}>
