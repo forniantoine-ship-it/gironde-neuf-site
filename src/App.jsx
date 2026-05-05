@@ -117,7 +117,19 @@ useEffect(() => {
             <input name="telephone" placeholder="Téléphone" style={styles.input} />
             <input name="email" placeholder="Email" style={styles.input} />
             <input name="budget" placeholder="Budget" style={styles.input} />
+<input
+  name="apport"
+  type="number"
+  placeholder="Apport (€)"
+  style={styles.input}
+/>
 
+<input
+  name="localisation"
+  type="text"
+  placeholder="Ville ou zone recherchée"
+  style={styles.input}
+/>
             <button type="submit" style={styles.submitBtn}>
               Recevoir ma sélection
             </button>
